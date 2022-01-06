@@ -1,0 +1,61 @@
+{% extends "base.html.twig" %}
+    {% block body %}
+    <head>
+        <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            }
+        
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: rgb(4, 12, 41);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .container .btn:hover {
+            background-color:blue;
+        }
+
+        .col {
+            column-count: 3;
+        }
+        </style>
+    </head>
+    
+    <body>
+            <br> <h2 style="font-size:2vw;">Différentes compétences</h2> <br>
+                <div class="col">
+                    <div class="container">
+                        <img src="image_cca.jpg" class="responsive" alt="Snow" style="width:100%">
+                        <button  class="btn" style="font-size:1vw;"> <a>href="/monportfoliocca" CCA - Administrer les réseaux et l'internet</a></button>
+                    </div>
+                    <div class="container">
+                        <img src="image_ccb.jpg" class="responsive" alt="Snow" style="width:100%">
+                        <button href="/monportfolioccb" class="btn" style="font-size:1vw;">CCB - Connecter les entreprises et les usagers</button>
+                    </div>
+                    <div class="container">
+                        <img src="image_ccc.jpg" class="responsive" alt="Snow" style="width:100%">
+                        <button href="/monportfolioccc" class="btn" style="font-size:1vw;">CCC - Créer des outils et applications informatiques pour les R&T</button>
+                    </div>
+                </div>
+    </body>
+
+    {% endblock %}
