@@ -42,7 +42,7 @@ class Sae14Controller extends AbstractController
     }
 
     /**
-     * @Route("/moneportfolio/cca", name="moneportfoliocca")
+     * @Route("/moneportfoliocca", name="moneportfoliocca")
      */
     public function portfoliocca ()
     {

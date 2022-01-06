@@ -37,6 +37,26 @@
         .col {
             column-count: 3;
         }
+        
+        .button{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .button:hover {
+            background-color: #3691B4;
+            color: black;
+            }
+
+            .button .active {
+            background-color: rgb(4, 12, 41);
+            color: white;
+            }
         </style>
     </head>
     
@@ -45,15 +65,15 @@
             <div class="col">
                 <div class="container">
                     <img src="image_cca.jpg" class="responsive" alt="Snow" style="width:100%">
-                    <button  class="btn" style="font-size:1vw;"> <a>href="/monportfoliocca" CCA - Administrer les réseaux et l'internet</a></button>
+                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfolio/cca';" class="btn button" style="font-size:1vw;"> CCA - Administrer les réseaux et l'internet</a></button>
                 </div>
                 <div class="container">
                     <img src="image_ccb.jpg" class="responsive" alt="Snow" style="width:100%">
-                    <button href="/monportfolioccb" class="btn" style="font-size:1vw;">CCB - Connecter les entreprises et les usagers</button>
+                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfolio/ccb';" class="btn button" style="font-size:1vw;">CCB - Connecter les entreprises et les usagers</button>
                 </div>
                 <div class="container">
                     <img src="image_ccc.jpg" class="responsive" alt="Snow" style="width:100%">
-                    <button href="/monportfolioccc" class="btn" style="font-size:1vw;">CCC - Créer des outils et applications informatiques pour les R&T</button>
+                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfolio/ccc';" class="btn button" style="font-size:1vw;">CCC - Créer des outils et applications informatiques pour les R&T</button>
                 </div>
             </div>
     </body>
