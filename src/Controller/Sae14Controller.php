@@ -42,7 +42,7 @@ class Sae14Controller extends AbstractController
     }
 
     /**
-     * @Route("/moneportfolio/cca", name="moneportfoliocca")
+     * @Route("/moneportfoliocca", name="moneportfoliocca")
      */
     public function portfoliocca ()
     {
@@ -50,7 +50,7 @@ class Sae14Controller extends AbstractController
     }
 
     /**
-     * @Route("/moneportfolio/ccb", name="moneportfolioccb")
+     * @Route("/moneportfolioccb", name="moneportfolioccb")
      */
     public function portfolioccb ()
     {
@@ -58,7 +58,7 @@ class Sae14Controller extends AbstractController
     }
 
     /**
-     * @Route("/moneportfolio/ccc", name="moneportfolio/ccc")
+     * @Route("/moneportfolioccc", name="moneportfolio/ccc")
      */
     public function portfolioccc ()
     {

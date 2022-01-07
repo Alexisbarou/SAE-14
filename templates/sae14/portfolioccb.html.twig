@@ -1,1 +1,77 @@
 {% extends "base.html.twig" %}
+{% block body %}
+    <head>
+        <style>
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            }
+        
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: rgb(4, 12, 41);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .container .btn:hover {
+            background-color:blue;
+        }
+
+        .col {
+            column-count: 3;
+        }
+        
+        .button{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .button:hover {
+            background-color: #3691B4;
+            color: white;
+            }
+
+            .button .active {
+            background-color: rgb(4, 12, 41);
+            color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+    <br> <h1 style="font-size:2vw;">CCA - </h1> <br>
+            <h2>
+            <div class="col">
+                <div class="container">
+                    <img src="image_cca.jpg" class="responsive" alt="Snow" style="width:100%">
+                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfoliocca';" class="btn button" style="font-size:1vw;"> CCA - Administrer les réseaux et l'internet</a></button>
+                </div>
+                <div class="container">
+                    <img src="image_ccb.jpg" class="responsive" alt="Snow" style="width:100%">
+                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfolioccb';" class="btn button" style="font-size:1vw;">CCB - Connecter les entreprises et les usagers</button>
+                </div>
+    </body>
+
+{% endblock %}
