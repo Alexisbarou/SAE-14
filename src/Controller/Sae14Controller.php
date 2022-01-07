@@ -42,7 +42,7 @@ class Sae14Controller extends AbstractController
     }
 
     /**
-     * @Route("/moneportfoliocca", name="moneportfoliocca")
+     * @Route("/moneportfolio/cca", name="moneportfoliocca")
      */
     public function portfoliocca ()
     {
@@ -64,6 +64,4 @@ class Sae14Controller extends AbstractController
     {
         return $this->render('sae14/portfolioccc.html.twig');
     }
-
-
 }
