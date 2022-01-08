@@ -2,20 +2,54 @@
 
 {% block stylesheets %}
 <style>
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+}
 
+.block:hover {
+  background-color: rgb(26, 185, 206);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.fondhome{
+  outline-style: solid;
+  border: 1px solid black;
+  outline-color: white;
+  outline-width: thin;
+  border-radius: 8px;
+}
 </style>
 {% endblock %}
 
 {% block body %}
-      <img src="photo_accueil.jpg" class="responsive" width="600" height="400">
-              <h1 style="font-size:2vw;"> Alexis BAROU R&T 1ère année - IUT Roanne - alexis.barou@etu.univ-st-etienne.fr</h1>
-            <div class="container">
-					<h2 style="font-size:1.7vw;"> Titulaire d'un bac STI2D avec mention "bien", passionné de nouvelles technologies, je suis curieux, à l'écoute et pleinement disposé à toujours donner le meilleur 
-						de moi même.
-						En intégrant l'IUT "Réseaux et Télécomunications", j'ai la change d'évoluer dans un environnement qui me convient parfaitement à travers l'acquisition de solides 
-						connaissances opérationnelles.
-					</h2>
-				
-          </div>
+      <div class="container">
+        <div class="fondhome">
+          <img src="photo_accueil1.jpg">
+              <h1 style="font-size:2vw;"> Alexis BAROU R&T 1ère année - IUT Roanne - alexis.barou@etu.univ-st-etienne.fr</h1><br>
+              <h2 style="font-size:1.7vw;"> Titulaire d'un bac STI2D avec mention "bien", passionné de nouvelles technologies, je suis curieux, à l'écoute et pleinement disposé à toujours donner le meilleur 
+                de moi même.
+                En intégrant l'IUT "Réseaux et Télécomunications", j'ai la change d'évoluer dans un environnement qui me convient parfaitement à travers l'acquisition de solides 
+                connaissances opérationnelles.</h2><br>
+              <button class="block" onclick="window.location.href = ....">Pour en savoir plus sur moi</button>
+        </div>
       </div>
 {% endblock %}
