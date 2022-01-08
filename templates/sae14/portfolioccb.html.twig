@@ -2,76 +2,106 @@
 {% block body %}
     <head>
         <style>
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
+            .aprentissages-critiques{
+                background-color : #A1D6E5;
+                text-align: center;
             }
-        
-        .container img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .container .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: rgb(4, 12, 41);
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
+
+            h3{
+               font-family: "Lato", sans-serif;
+               color: rgb(4, 12, 41);
+            }
+
+            h4{
+                font-family: "Lato", sans-serif; 
+                color: green;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            h5{
+                font-family: "Lato", sans-serif; 
+                color: green;
+                font-weight: bold;
+                text-align: left;
+            }
+
+            u{
+                color: green;
+            }
+
+            .btn {
+            background-color: #06495F;
             border: none;
+            color: white;
+            padding: 12px 30px;
             cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-        
-        .container .btn:hover {
-            background-color:blue;
-        }
-
-        .col {
-            column-count: 3;
-        }
-        
-        .button{
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: left;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
+            font-size: 20px;
             }
 
-            .button:hover {
-            background-color: #3691B4;
-            color: white;
-            }
-
-            .button .active {
-            background-color: rgb(4, 12, 41);
-            color: white;
-            }
+            progress
         </style>
     </head>
     
     <body>
-    <br> <h1 style="font-size:2vw;">CCA - </h1> <br>
-            <h2>
-            <div class="col">
-                <div class="container">
-                    <img src="image_cca.jpg" class="responsive" alt="Snow" style="width:100%">
-                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfoliocca';" class="btn button" style="font-size:1vw;"> CCA - Administrer les réseaux et l'internet</a></button>
-                </div>
-                <div class="container">
-                    <img src="image_ccb.jpg" class="responsive" alt="Snow" style="width:100%">
-                    <button onclick="window.location.href= 'http://127.0.0.1:8000/moneportfolioccb';" class="btn button" style="font-size:1vw;">CCB - Connecter les entreprises et les usagers</button>
-                </div>
+    <br> <h1 style="font-size:2vw;">Connecter les entreprises et les usagers</h1> <br>
+            <div class="container">
+                <h2 style="font-size:1.5vw;">en choisissant les solutions et technologies réseaux adaptées
+                    en respectant les principes fondamentaux de la sécurité informatique
+                    en utilisant une approche rigoureuse pour la résolution des dysfonctionnements
+                    en respectant les règles métiers
+                    en assurant une veille technologique
+                </h2> <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="aprentissages-critiques">
+                                <h3 style="font-size:1.5vw;"> Maîtriser les fondamentales de l’électricité (pour intervenir sur des équipements de réseaux et télécommunications) :</h3>
+                                <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                                <h5 style="font-size:1vw"> - de déterminer un pont diviseur<br>- calculer une tension et un courant</h5>
+                                <button class="btn"><a href="cv.png" download><i class="fa fa-download"></i> Download</button></a>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="aprentissages-critiques">
+                                <h3 style="font-size:1.5vw;"> Maîtriser les fondamentales de l’électricité (pour intervenir sur des équipements de réseaux et télécommunications) :</h3>
+                                <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                                <h5 style="font-size:1vw"> - de déterminer un pont diviseur<br>- calculer une tension et un courant</h5>
+                                <button class="btn"><a href="cv.png" download><i class="fa fa-download"></i> Download</button></a>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="aprentissages-critiques">
+                                <h3 style="font-size:1.5vw;"> Maîtriser les fondamentales de l’électricité (pour intervenir sur des équipements de réseaux et télécommunications) :</h3>
+                                <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                                <h5 style="font-size:1vw"> - de déterminer un pont diviseur<br>- calculer une tension et un courant</h5>
+                                <button class="btn"><a href="cv.png" download><i class="fa fa-download"></i> Download</button></a>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="aprentissages-critiques">
+                                <h3 style="font-size:1.5vw;"> Maîtriser les fondamentales de l’électricité (pour intervenir sur des équipements de réseaux et télécommunications) :</h3>
+                                <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                                <h5 style="font-size:1vw"> - de déterminer un pont diviseur<br>- calculer une tension et un courant</h5>
+                                <button class="btn"><a href="cv.png" download><i class="fa fa-download"></i> Download</button></a>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
     </body>
 
 {% endblock %}
