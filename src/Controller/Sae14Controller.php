@@ -64,4 +64,12 @@ class Sae14Controller extends AbstractController
     {
         return $this->render('sae14/portfolioccc.html.twig');
     }
+    
+    /**
+     * @Route("/quisuisje", name="quisuisje")
+     */
+    public function quisuisje ()
+    {
+        return $this->render('sae14/quisuisje.html.twig');
+    }
 }
