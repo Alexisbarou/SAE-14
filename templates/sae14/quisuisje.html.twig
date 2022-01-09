@@ -2,67 +2,150 @@
 {% block body %}
     <head>
         <style>
-* {
-  box-sizing: border-box;
-}
+                /* Center website */
+                .main {
+                max-width: 1000px;
+                margin: auto;
+                }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
+                h1{
+                    font-family: "Lato", sans-serif;
+                    font-size: 40px;
+                    color: rgb(0, 255, 179);
+                    text-align: center;
+                }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+                h3{
+                    text-align: center;
+                }
+                .row {
+                margin: 8px -16px;
+                }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+                /* Add padding BETWEEN each column */
+                .row,
+                .row > .column {
+                padding: 8px;
+                }
 
-.row {
-  margin: 8px -16px;
-}
+                /* Create four equal columns that floats next to each other */
+                .column {
+                float: left;
+                width: 25%;
+                }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+                /* Clear floats after rows */ 
+                .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
+                /* Content */
+                .content {
+                background-color: white;
+                padding: 10px;
+                border-radius: 8px;
+                }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+                /* Responsive layout - makes a two column-layout instead of four columns */
+                @media screen and (max-width: 900px) {
+                .column {
+                    width: 50%;
+                }
+                }
 
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
+                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                }
+                }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
+                .fondhome{
+                    background: 
+                    opacity: 0.5;
+                    outline-style: solid;
+                    border: 1px solid black;
+                    outline-color: white;
+                    outline-width: thin;
+                    border-radius: 8px;
+                }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</head>
+                .button {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    background-color: red;
+                    color: white;
+                    padding: 14px 28px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 8px;
+                }
+
+                .button:hover {
+                    background-color: rgb(26, 185, 206);
+                    color: white;
+                }
+
+                .fa-youtube {
+                    padding: 5px;
+                    font-size: 20px;
+                    width: 70px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 5px 2px;
+                    background: #bb0000;
+                    color: white;
+                }
+        </style>
+    </head>
+    
+<body>
+    <div class="container">   
+        <div class="fondhome">
+            <h1> Mes réalisations</h1><br>
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="capturechaîne.jpg" style="width:100%">
+                            <h3>Ma chaine YouTube AB69</h3>
+                            <p>Cette chaine contient des anciens matchs (sous forme de résumés) et reportages sur le football des années 90-2000.</p>
+                            <p>Je l'ai créee en 2017, alors agé de 13 ans et demi, pour faire partager ma passion et culture footballistique aux internautes du monde entier.</p>
+                            <p>Étant précurseur dans ce dommaine, elle a rencontré un vif succès et compte aujourd'hui une communauté de plus de 32 000 abonnés.</p>
+                            <p>Lien vers ma chaine : <a href="https://www.youtube.com/channel/UCxH7c89MPPME3Qk1m8abjkQ" class="fa fa-youtube"></a></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="articlejournal1.jpg" style="width:100%">
+                            <h3>La presse en parle</h3>
+                            <p>Mon jeune âge, pour me lancer dans le monde de YouTube de manière autodidacte, a susité l'intéret d'un journaliste du Progrès de Lyon en Janvier 2019.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="articlesweb.jpg" style="width:100%">
+                            <h3>Mes vidéos réutilisées par des sites internet...</h3>
+                            <p>Même des sites de presses sportives (France Football), de presses régionale (MidiLibre) ou encore les sites officiels de club de foot (AS Monaco) utilisent mes vidéos pour alimenter leurs articles.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="applications.jpg" style="width:100%">
+                            <h3>Les logiciels utilisés</h3>
+                            <p>N'ayant aucune connaissance technique de base dans l'audiovisuel mais étant très curieux et très motivé, je me suis lancé grâce à des tutoriels sur le web.</p>
+                            <p>J'ai commencé avec le logiciel de montage "Movie Maker" au début de ma chaine (un logiciel très basique de Windows mais très efficace pour commencer), puis pour répondre aux attentes des internautes, 
+                            je travaille mes vidéos avec "HitFilm Express" (logiciel plus complexe, avec beaucoup de fonctionnalités, mais très complet).<p>
+                            <p>En achetant des cassettes vidéo enregistrées sur les sites de petites annonces, je peux les convertir en MP4 grâce à un convertiseur RCA jusqu'au port USB de l'ordinateur, à l'aide d'un magnétoscope et d'un logiciel pour enregistrer l'image.
+                            Ce qui me permet de proposer du contenu sur ma chaine et d'éviter, au vendeur, de les jetter à la poubelle !</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>   
+</body>
+
+{% endblock %}
