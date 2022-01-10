@@ -72,4 +72,12 @@ class Sae14Controller extends AbstractController
     {
         return $this->render('sae14/quisuisje.html.twig');
     }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact ()
+    {
+        return $this->render('sae14/contact.html.twig');
+    }
 }

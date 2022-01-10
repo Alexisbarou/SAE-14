@@ -1,0 +1,133 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <head>
+        <style>
+            h1{
+                font-family: "Lato", sans-serif;
+                font-size: 40px;
+                color: rgb(0, 255, 179);
+                text-align: center;
+                padding: 10px;
+            }    
+/* Style inputs */
+input, select{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #3691B4;;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.active, .a:hover {
+  background-color: #555;
+}
+
+                .fondhome{
+                    background: 
+                    opacity: 0.5;
+                    outline-style: solid;
+                    border: 1px solid black;
+                    outline-color: white;
+                    outline-width: thin;
+                    border-radius: 8px;
+                }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fondhome">
+                <h1>Contact</h1>
+                <div class="row">
+                    <div class="column">
+                        <h2 style="text-align:center">Fiche récap' auteur</h2>
+                            <div class="card">
+                            <img src="lassalle.jpg" style="width:100%">
+                            <h1>Alexis Barou</h1>
+                            <p>18 ans, étudiant en BUT Réseaux et Télécomunications à Roanne (42300)</p>
+                            <p>Pour me retrouver :</p>
+                            <div style="margin: 25px 0;">
+                                <a href="https://www.youtube.com/channel/UCxH7c89MPPME3Qk1m8abjkQ"><i class="fa fa-youtube"></i></a> 
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                                <a href="#"><i class="fa fa-facebook"></i></a> 
+                            </div>
+                            </div>
+                    </div>
+                    <div class="column">
+                        <h2 style="text-align:center">Formulaire de contact</h2>
+                        <label style='color:white'>Votre prénom :</label>
+                        <input type="text" placeholder="Jean...">
+                        <label style='color:white'>Votre nom</label>
+                        <input type="text" placeholder="Lassalle..">
+                        <label style='color:white'>Votre âge</label>
+                        <select id="age" name="age">
+                            <option>Moins de 18 ans</option>
+                            <option>Entre 18 et 29 ans</option>
+                            <option>Entre 30 et 49 ans </option>
+                            <option>Entre 50 et 69 ans</option>
+                            <option>Plus de 70 ans</option>
+                        </select>
+                        <p><button>Envoyer</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+{% endblock %}
