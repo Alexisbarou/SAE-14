@@ -103,6 +103,36 @@
                 .fa-youtube:hover{
                     color: white;
                 }
+
+                .column1 {
+                float: left;
+                width: 50%;
+                }
+
+                .content1 {
+                background-color: white;
+                padding: 10px;
+                border-radius: 8px;
+                }
+
+                .row,
+                .row > .column1 {
+                padding: 8px;
+                }
+
+                /* Responsive layout - makes a two column-layout instead of four columns */
+                @media screen and (max-width: 900px) {
+                .column1 {
+                    width: 50%;
+                }
+                }
+
+                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 600px) {
+                .column1 {
+                    width: 100%;
+                }
+                }
         </style>
     </head>
     
@@ -147,43 +177,26 @@
                         </div>
                     </div>
                 </div>
-        <div class="fondhome">    
-            <h1> Mes passions</h1><br>
-                <div class="row">
-                    <div class="column">
-                        <div class="content">
-                            <img src="collection1.jpg" style="width:100%">
-                            <h3>Mes collections</h3>
-                            <p>Je collectionne près de 3000 numéros du magazine "France Football" allant des années 80 à aujourd'hui. Il a fallu beaucoup de patience pendant plus de 5 ans pour retrouver et ne manquer aucun numéro.</p>
-                            <p>Je possède également des livres qui traîtent du même sujet, des DVD et VHS de matchs pour faire mes vidéos...</p>
+        </div > 
+            <div class="fondhome">    
+                <h1>Mes loisirs et passions</h1><br>
+                    <div class="row">
+                        <div class="column1">
+                            <div class="content1">
+                                <img src="collection1.jpg" style="width:100%">
+                                <h3>Mes collections</h3>
+                                <p>Je collectionne près de 3000 numéros du magazine "France Football" allant des années 80 à aujourd'hui. Il a fallu beaucoup de patience pendant plus de 5 ans pour retrouver et ne manquer aucun numéro.</p>
+                                <p>Je possède également des livres qui traîtent du même sujet, des DVD et VHS de matchs pour faire mes vidéos...</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="articlejournal1.jpg" style="width:100%">
-                            <h3>La presse en parle</h3>
-                            <p>Mon jeune âge, pour me lancer dans le monde de YouTube de manière autodidacte, a susité l'intéret d'un journaliste du Progrès de Lyon en Janvier 2019.</p>
+                        <div class="column1">
+                            <div class="content1">
+                                <img src="test.jpg" style="width:100%">
+                                <h3>Mon loisir</h3>
+                                <p>Mon jeune âge, pour me lancer dans le monde de YouTube de manière autodidacte, a susité l'intéret d'un journaliste du Progrès de Lyon en Janvier 2019.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="articlesweb.jpg" style="width:100%">
-                            <h3>Mes contenus sont réutilisés</h3>
-                            <p>Des sites de presse sportive (France Football), de presse régionale (MidiLibre) ou encore les sites officiels de club de foot (AS Monaco) utilisent mes vidéos pour alimenter leurs articles.</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="applications.jpg" style="width:100%">
-                            <h3>Les logiciels utilisés</h3>
-                            <p>N'ayant aucune connaissance technique de base dans l'audiovisuel mais étant très curieux et très motivé, je me suis lancé grâce à des tutoriels sur le web.</p>
-                            <p>J'ai commencé avec le logiciel de montage "Movie Maker" au début de ma chaine (un logiciel très basique de Windows mais très efficace pour commencer), puis pour répondre aux attentes des internautes, 
-                            je travaille mes vidéos avec "HitFilm Express" (logiciel plus complexe, avec beaucoup de fonctionnalités, mais très complet).<p>
-                            <p>En achetant des cassettes vidéo enregistrées sur les sites de petites annonces, je peux les convertir en MP4 grâce à un convertiseur RCA jusqu'au port USB de l'ordinateur, à l'aide d'un magnétoscope et d'un logiciel pour enregistrer l'image.
-                            Ce qui me permet de proposer du contenu sur ma chaine et d'éviter, aux vendeurs, de les jetter à la poubelle !</p>
-                        </div>
-                    </div>
-                </div>
+                
         </div>
         </div>
     </div>   
