@@ -9,6 +9,13 @@
                 text-align: center;
                 padding: 10px;
             }    
+
+            h3{
+              font-family: "Lato", sans-serif;
+              font-size: 10px;
+              color: rgb(0, 255, 179);
+              padding: 10px;
+            }
 /* Style inputs */
 input, textarea {
   width: 100%;
@@ -52,7 +59,7 @@ button {
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 button:hover, a:hover {
@@ -96,28 +103,29 @@ a {
                     <div class="column">
                         <h2 style="text-align:center">Fiche récap' auteur</h2>
                             <div class="card">
-                            <img src="lassalle.jpg" style="width:100%">
-                            <h1>Alexis Barou</h1>
-                            <p>18 ans, étudiant en BUT Réseaux et Télécomunications à Roanne (42300)</p>
-                            <p>Pour me retrouver :</p>
-                            <div style="margin: 25px 0;">
-                                <a href="https://www.youtube.com/channel/UCxH7c89MPPME3Qk1m8abjkQ"><i class="fa fa-youtube"></i></a> 
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>  
-                                <a href="#"><i class="fa fa-facebook"></i></a> 
-                            </div>
+                              <img src="lassalle.jpg" style="width:100%">
+                              <h1>Alexis Barou</h1>
+                              <p>18 ans, étudiant en BUT Réseaux et Télécomunications à Roanne (42300)</p>
+                              <p>Pour me retrouver :</p>
+                              <div style="margin: 25px 0;">
+                                  <a href="https://www.youtube.com/channel/UCxH7c89MPPME3Qk1m8abjkQ"><i class="fa fa-youtube"></i></a> 
+                                  <a href="#"><i class="fa fa-envelope"></i></a>
+                                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                                  <a href="#"><i class="fa fa-facebook"></i></a> 
+                              </div>
                             </div>
                     </div>
                     <div class="column">
                         <h2 style="text-align:center">Formulaire de contact</h2>
-                        <label id="prenom" onkeypress="check()" style='color:white'>Votre prénom :</label>
+                        <label id="prenom" onkeypress="check()" style='color:white'>Votre prénom*</label>
                         <input type="text" placeholder="Votre prénom...">
-                        <label onkeypress="check()" id="nom" style='color:white'>Votre nom</label>
+                        <label onkeypress="check()" id="nom" style='color:white'>Votre nom*</label>
                         <input type="text" placeholder="Votre nom..">
-                        <label style='color:white'>Votre email</label>
+                        <label style='color:white'>Votre email*</label>
                         <input onkeypress="check()" id ="email"type="text" placeholder="Votre email..">
-                        <label style='color:white'>Sujet</label>
+                        <label style='color:white'>Votre message</label>
                         <textarea id="subject" name="subject" placeholder="Votre problèmme.." style="height:100px"></textarea>
+                        <h3 style="text-align:right">*Champs obligatoire</h3>
                         <p id ="text" style="display:none"><a href="CV.png" download><button>Envoyer</button></p>
                     </div>
                 </div>
