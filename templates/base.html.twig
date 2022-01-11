@@ -37,6 +37,19 @@
                     x.className = "topnav";
                 }
             }
+            
+            function check(){
+                var prenom = document.getElementById("prenom");
+                var nom = document.getElementById("nom");
+                var email = document.getElementById("email");
+                var text = document.getElementById("text");
+                if (prenom.value != "" && nom.value !="" && email.value !=""){
+                    text.style.display = "block";
+                }
+                else{
+                    text.style.display = "none";
+                }
+            }
             </script>
     </body>
 </html>

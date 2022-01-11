@@ -10,7 +10,7 @@
                 padding: 10px;
             }    
 /* Style inputs */
-input, select{
+input, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -86,7 +86,6 @@ a {
                     outline-width: thin;
                     border-radius: 8px;
                 }
-
         </style>
     </head>
     <body>
@@ -111,19 +110,15 @@ a {
                     </div>
                     <div class="column">
                         <h2 style="text-align:center">Formulaire de contact</h2>
-                        <label style='color:white'>Votre prénom :</label>
-                        <input type="text" placeholder="Jean...">
-                        <label style='color:white'>Votre nom</label>
-                        <input type="text" placeholder="Lassalle..">
-                        <label style='color:white'>Votre âge</label>
-                        <select id="age" name="age">
-                            <option>Moins de 18 ans</option>
-                            <option>Entre 18 et 29 ans</option>
-                            <option>Entre 30 et 49 ans </option>
-                            <option>Entre 50 et 69 ans</option>
-                            <option>Plus de 70 ans</option>
-                        </select>
-                        <p><button>Envoyer</button></p>
+                        <label id="prenom" onkeypress="check()" style='color:white'>Votre prénom :</label>
+                        <input type="text" placeholder="Votre prénom...">
+                        <label onkeypress="check()" id="nom" style='color:white'>Votre nom</label>
+                        <input type="text" placeholder="Votre nom..">
+                        <label style='color:white'>Votre email</label>
+                        <input onkeypress="check()" id ="email"type="text" placeholder="Votre email..">
+                        <label style='color:white'>Sujet</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                        <p id ="text" style="display:none"><button>Envoyer</button></p>
                     </div>
                 </div>
             </div>
