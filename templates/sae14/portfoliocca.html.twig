@@ -2,11 +2,13 @@
 {% block body %}
     <head>
         <style>
+            /*Pour la couleur de fond des cartes*/
             .aprentissages-critiques{
                 background-color : #A1D6E5;
                 text-align: center;
             }
 
+            /*pour les textes*/
             .fondhome{
             outline-style: solid;
             border: 1px solid black;
@@ -34,6 +36,7 @@
                 text-align: left;
             }
 
+            /*Boutton*/
             .btn {
             background-color: #06495F;
             border: none;
@@ -43,90 +46,85 @@
             font-size: 20px;
             }
         </style>
-    </head>
-    
-<body>
-    <div class="container">   
-        <div class="fondhome">
-            <br> <h1 style="font-size:2vw;">Administrer les réseaux et l’Internet</h1> <br>
-                        <h2 style="font-size:1.5vw;">Chaque case correspond à un apprentissage critique réalisé durant ma première année de formation, avec ce que j'ai acquis et un document avec les tâches réalisées en classe (bouton "Download") :
-                        </h2> <br>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Maîtriser les lois fondamentales de l’électricité :</h3>
-                                        <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                        <h5 style="font-size:1vw"> - Déterminer un pont diviseur<br>- Calculer une tension et un courant</h5>
-                                        <button class="btn"><a href="CCA - Maîtriser les lois fondamentales de l’électricité.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Comprendre l’architecture des systèmes numériques :</h3>
-                                        <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                        <h5 style="font-size:1vw"> - Lister les principales vulnérabilités pour me prévenir d'une cyberattaque</h5>
-                                        <button class="btn"><a href="CCA - Comprendre l’architecture des systèmes numériques.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
+    </head>  
+    <body>
+        <div class="container">   
+            <div class="fondhome">
+                <br> <h1 style="font-size:2vw;">Administrer les réseaux et l’Internet</h1> <br>
+                <h2 style="font-size:1.5vw;">Chaque case correspond à un apprentissage critique réalisé durant ma première année de formation, avec ce que j'ai acquis et un document avec les tâches réalisées en classe (bouton "Download") :</h2> <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Maîtriser les lois fondamentales de l’électricité :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Déterminer un pont diviseur<br>- Calculer une tension et un courant</h5>
+                            <button class="btn"><a href="CCA - Maîtriser les lois fondamentales de l’électricité.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Configurer les fonctions de base du réseau local :</h3>
-                                        <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                        <h5 style="font-size:1vw"> - Configurer les interfaces d'un switch avec le bon VLAN ou avec un lien trunk <br> - Donner un nom au switch <br> - Bien câbler un switch</h5>
-                                        <button class="btn"><a href="CCA - Configurer les fonctions de base du réseau local.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation :</h3>
-                                        <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                        <h5 style="font-size:1vw"> - Connaître les conséquences d'une cyberattaque sur le système d'exploitation et se prémunir</h5>
-                                        <button class="btn"><a href="CCA - Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Comprendre l’architecture des systèmes numériques :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Lister les principales vulnérabilités pour me prévenir d'une cyberattaque</h5>
+                            <button class="btn"><a href="CCA - Comprendre l’architecture des systèmes numériques.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
                             </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="aprentissages-critiques">
-                                            <h3 style="font-size:1.5vw;"> Savoir identifier les dysfonctionnements du réseau local :</h3>
-                                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                            <h5 style="font-size:1vw"> - Savoir identifier les dysfonctionnements sur un réseau et le résoudre <br> - Connaître les conséquences d'une attaque</h5>
-                                            <button class="btn"><a href="CCA - Identifier les dysfonctionnements du réseau local.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                    </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="aprentissages-critiques">
-                                            <h3 style="font-size:1.5vw;"> Installer un poste client et le sécuriser :</h3>
-                                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
-                                            <h5 style="font-size:1vw"> - Configurer des adresses IP sur un VLAN (à l'aide du logiciel Putty) <br> - Mettre en place un dossier partagé entre un hôte et un client</h5>
-                                            <button class="btn"><a href="CCA - Installer un poste client.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                    <div class="progress">
-                                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                    </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Configurer les fonctions de base du réseau local :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Configurer les interfaces d'un switch avec le bon VLAN ou avec un lien trunk <br> - Donner un nom au switch <br> - Bien câbler un switch</h5>
+                            <button class="btn"><a href="CCA - Configurer les fonctions de base du réseau local.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
                             </div>
-                        </div>    
-        </div>
-    </div>   
-</body>
-
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Connaître les conséquences d'une cyberattaque sur le système d'exploitation et se prémunir</h5>
+                            <button class="btn"><a href="CCA - Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Savoir identifier les dysfonctionnements du réseau local :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Savoir identifier les dysfonctionnements sur un réseau et le résoudre <br> - Connaître les conséquences d'une attaque</h5>
+                            <button class="btn"><a href="CCA - Identifier les dysfonctionnements du réseau local.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Installer un poste client et le sécuriser :</h3>
+                            <h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4>
+                            <h5 style="font-size:1vw"> - Configurer des adresses IP sur un VLAN (à l'aide du logiciel Putty) <br> - Mettre en place un dossier partagé entre un hôte et un client</h5>
+                            <button class="btn"><a href="CCA - Installer un poste client.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>   
+    </body>
 {% endblock %}

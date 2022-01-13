@@ -2,11 +2,13 @@
 {% block body %}
     <head>
         <style>
+            /*Pour la couleur de fond des cartes*/
             .aprentissages-critiques{
                 background-color : #A1D6E5;
                 text-align: center;
             }
 
+            /*pour les textes*/
             h3{
                font-family: "Lato", sans-serif;
                color: rgb(4, 12, 41);
@@ -25,89 +27,86 @@
                 font-weight: bold;
                 text-align: left;
             }
-
+            /*Boutton*/
             .btn {
-            background-color: #06495F;
-            border: none;
-            color: white;
-            padding: 12px 30px;
-            cursor: pointer;
-            font-size: 20px;
+                background-color: #06495F;
+                border: none;
+                color: white;
+                padding: 12px 30px;
+                cursor: pointer;
+                font-size: 20px;
             }
 
+            /*Contour*/
             .fondhome{
-            outline-style: solid;
-            border: 1px solid black;
-            outline-color: white;
-            outline-width: thin;
-            border-radius: 8px;
+                outline-style: solid;
+                border: 1px solid black;
+                outline-color: white;
+                outline-width: thin;
+                border-radius: 8px;
             }
         </style>
-    </head>
-    
-<body>
-    <div class="container">   
-        <div class="fondhome">
-            <br> <h1 style="font-size:2vw;">Créer des outils et applications informatiques pour les R&T</h1> <br>
-                        <h2 style="font-size:1.5vw;">Chaque case correspond à un apprentissage critique réalisé durant ma première année de formation, avec ce que j'ai acquis et un document avec les tâches réalisées en classe (bouton "Download") :
-                        </h2> <br>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Utiliser un système informatique et ses outils :</h3>
-                                        <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
-                                        <h5 style="font-size:1vw"> - Connaitre les différents dangers durant une séance de TP et les bases d'un sytème d'exploitation <br> 
-                                            - Faire une topologie du réseau <br> 
-                                            - Configurer des mots de passe sur un  switch pour le sécuriser et lui affecter des ports à un VLAN spécifique (même en mode trunk)<br>
-                                            - Utiliser des logiciels pour programmer<br>
-                                            - Savoir évoluer entre l'interface graphique et le terminal</h5>
-                                        <button class="btn"><a href="CCC - Utiliser un système informatique et ses outils.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Lire, exécuter, corriger et modifier un programme</h3>
-                                        <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
-                                        <h5 style="font-size:1vw"> -  Savoir lire, commenter, expliquer et analyser des erreurs dans un programme <br> 
-                                            - Créer un script dans le terminal</h5>
-                                        <button class="btn"><a href="CCC - Lire, exécuter, corriger et modifier un programme .docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
+    </head>  
+    <body>
+        <div class="container">   
+            <div class="fondhome">
+                <br> <h1 style="font-size:2vw;">Créer des outils et applications informatiques pour les R&T</h1> <br>
+                <h2 style="font-size:1.5vw;">Chaque case correspond à un apprentissage critique réalisé durant ma première année de formation, avec ce que j'ai acquis et un document avec les tâches réalisées en classe (bouton "Download") :</h2> <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Utiliser un système informatique et ses outils :</h3>
+                            <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                            <h5 style="font-size:1vw"> - Connaitre les différents dangers durant une séance de TP et les bases d'un sytème d'exploitation <br> 
+                            - Faire une topologie du réseau <br> 
+                            - Configurer des mots de passe sur un  switch pour le sécuriser et lui affecter des ports à un VLAN spécifique (même en mode trunk)<br>
+                            - Utiliser des logiciels pour programmer<br>
+                            - Savoir évoluer entre l'interface graphique et le terminal</h5>
+                            <button class="btn"><a href="CCC - Utiliser un système informatique et ses outils.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Traduire un algorithme, dans un langage et pour un environnement donné :</h3>
-                                        <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
-                                        <h5 style="font-size:1vw"> - Savoir coder un programme avec des balises "if", "do while", des fonctions, des tableaux et des fichiers "texte"...avec de l'aide (internet, professeur, etudiant ou d'anciens programmes réalisés en cours)</h5>
-                                        <button class="btn"><a href="CCC - Traduire un algorithme, dans un langage et pour un environnement donné.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="aprentissages-critiques">
-                                        <h3 style="font-size:1.5vw;"> Connaître l’architecture et les technologies d’un site Web :</h3>
-                                        <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
-                                        <h5 style="font-size:1vw"> - Savoir créer et afficher plusieurs pages en HTML avec des balises, des ancres et lier avec une page CSS <br>
-                                            - Créer une page symfony et intégrer avec des outils Bootstrap</h5>
-                                        <button class="btn"><a href="CCC - Connaître l’architecture et les technologies d’un site Web.docx" download><i class="fa fa-download"></i> Download</button></a>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
-                                                </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Lire, exécuter, corriger et modifier un programme</h3>
+                            <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                            <h5 style="font-size:1vw"> -  Savoir lire, commenter, expliquer et analyser des erreurs dans un programme <br> 
+                            - Créer un script dans le terminal</h5>
+                            <button class="btn"><a href="CCC - Lire, exécuter, corriger et modifier un programme .docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
                             </div>
-                        </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Traduire un algorithme, dans un langage et pour un environnement donné :</h3>
+                            <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                            <h5 style="font-size:1vw"> - Savoir coder un programme avec des balises "if", "do while", des fonctions, des tableaux et des fichiers "texte"...avec de l'aide (internet, professeur, etudiant ou d'anciens programmes réalisés en cours)</h5>
+                            <button class="btn"><a href="CCC - Traduire un algorithme, dans un langage et pour un environnement donné.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="aprentissages-critiques">
+                            <h3 style="font-size:1.5vw;"> Connaître l’architecture et les technologies d’un site Web :</h3>
+                            <u><h4 style="font-size:1.5vw"> <i class="fa fa-check"></i> </h4></u>
+                            <h5 style="font-size:1vw"> - Savoir créer et afficher plusieurs pages en HTML avec des balises, des ancres et lier avec une page CSS <br>
+                            - Créer une page symfony et intégrer avec des outils Bootstrap</h5>
+                            <button class="btn"><a href="CCC - Connaître l’architecture et les technologies d’un site Web.docx" download><i class="fa fa-download"></i> Download</button></a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Niveau d'accquisition : validé</div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
         </div>
-    </div>    </div>
-</body>
-
+    </body>
 {% endblock %}
